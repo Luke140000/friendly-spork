@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <a-camera>
+    <a-cursor></a-cursor>
+        </a-camera>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-camera>
+    <a-cursor fuse= "true" fuse-timeout="5000" color="red"></a-cursor>
+        </a-camera>
+            <a-torus-knot src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRFFq2laRl37QXSap4DmFToSPo44wqLwoQD-9gerECCqG-QhCporyzAXaoGSwasH2fJKZ0l1xeP8ecAdPTZ4LQF0rEM048pNSPxsDcP91KLQ" arc="360" p="2" q="7" radius="3" radius-tubular="1" position="-5 2 -20" rotation="0 0 90"
+            animation="property: rotation;
+            from: 0 0 90;
+            to: 0 360 90;
+            dur: 10000;
+            loop: true;
+            easing: linear;
+            startEvents: click;"
+            animation__2="property: scale;
+            from: 1 1 1;
+            to: 1.5 1.5 1.5;
+            dur: 2000;
+            loop: true;
+            dir: alternate;
+            startEvents: click;"
+            ></a-torus-knot>
+        <a-icosahedron color="#00bfff" radius="5" position="15 2 -20"
+        animation="property: position;
+            from: 15 2 -20;
+            to: 15 360 -20;
+            dur: 10000;
+            loop: true;
+            dir: alternate;
+            easing: easeInOutElastic;
+            startEvents: click;"
+            animation__2="property: color;
+            from: #00bfff;
+            to: #8a0000;
+            dur: 2000;
+            loop: true;
+            dir: alternate;
+            startEvents: click;"
+            ></a-icosahedron>
+        </a-scene>
+    </body>
+</html>
